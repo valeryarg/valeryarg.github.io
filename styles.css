@@ -1,0 +1,147 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+.students {
+    list-style: none;
+    padding: 0;
+}
+
+.students li {
+    margin: 5px 0;
+}
+
+nav {
+    background-color: #060222;
+}
+
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.menu li {
+    position: relative;
+}
+
+.menu a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.menu a:hover {
+    background-color: #555;
+}
+
+.dropdown .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #555;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+}
+
+.dropdown .submenu li {
+    border-bottom: 1px solid #666;
+}
+
+.dropdown .submenu li:last-child {
+    border-bottom: none;
+}
+
+.dropdown .submenu a {
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.dropdown:hover .submenu {
+    display: block;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #060222;
+    color: white;
+    margin-top: 20px;
+}
+.logo {
+    max-height: 25vh; /* 25% de la altura de la pantalla */
+    display: block;
+    margin: 20px auto; /* Centra la imagen horizontalmente */
+}
+.proyectos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas iguales */
+    gap: 1rem; /* Espacio entre los elementos */
+    padding: 1rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.proyectos div {
+    background-color: #f9f9f9;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.proyectos div h2 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.proyectos div img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.proyectos div button {
+    background-color: #060222;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 0.9rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.proyectos div button:hover {
+    background-color: #333;
+    transform: scale(1.05);
+}
+
+.proyectos div button:active {
+    background-color: #555;
+    transform: scale(1);
+}
